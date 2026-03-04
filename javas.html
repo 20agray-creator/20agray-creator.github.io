@@ -2,11 +2,6 @@
 <body>
 <h1 style="text-align:center;">Time</h1>
 
-<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-Click to display Date and Time.</button>
-
-<p id="demo"></p>
-
 <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 <div id="myPlot" style="width:100%;max-width:600px"></div>
@@ -27,6 +22,9 @@ const layout = {title:"Time Spent"};
 
 Plotly.newPlot("myPlot", data, layout);
 </script>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click to display Date and Time.</button>
 
+<p id="demo"></p>
 </body>
 </html> 
