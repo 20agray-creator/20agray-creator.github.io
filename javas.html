@@ -1,16 +1,11 @@
 <html>
-  <body>
-    <script>
-      function createParagraph() {
-        const para = document.createElement("p");
-        para.textContent = "You clicked the button!";
-        document.body.appendChild(para);
-      }
-      const buttons = document.querySelectorAll("button");
+<body>
+<h1>My First JavaScript</h1>
 
-      for (const button of buttons) {
-        button.addEventListener("click", createParagraph);
-      }
-    </script>
-  </body>
-</html>
+<button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
+Click me to display Date and Time.</button>
+
+<p id="demo"></p>
+
+</body>
+</html> 
