@@ -1,11 +1,32 @@
 <html>
 <body>
-<h1 "style;align-center">My First JavaScript</h1>
+<h1 style="text-align:center;">Time</h1>
 
 <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
+Click to display Date and Time.</button>
 
 <p id="demo"></p>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="myPlot" style="width:100%;max-width:700px"></div>
+
+<script>
+const xArray = ["Italy", "France", "Spain", "USA", "Argentina"];
+const yArray = [55, 49, 44, 24, 15];
+
+const data = [{
+  x:xArray,
+  y:yArray,
+  type:"bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255,0.6)"}
+}];
+
+const layout = {title:"World Wide Wine Production"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
 
 </body>
 </html> 
